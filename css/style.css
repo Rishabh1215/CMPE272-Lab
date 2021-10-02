@@ -24,33 +24,33 @@
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
 * {
-     box-sizing: border-box !important;
-     transition: ease all 0.5s;
+    box-sizing: border-box !important;
+    transition: ease all 0.5s;
 }
 
 html {
-     scroll-behavior: smooth;
-     overflow-x: hidden !important;
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
 }
 
 body {
-     color: #666666;
-     font-size: 14px;
-     font-family: Raleway;
-     line-height: 1.80857;
-     font-weight: normal;
-     overflow-x: hidden !important;
+    color: #666666;
+    font-size: 14px;
+    font-family: Raleway;
+    line-height: 1.80857;
+    font-weight: normal;
+    overflow-x: hidden !important;
 }
 
 a {
-     color: #1f1f1f;
-     text-decoration: none !important;
-     outline: none !important;
-     -webkit-transition: all .3s ease-in-out;
-     -moz-transition: all .3s ease-in-out;
-     -ms-transition: all .3s ease-in-out;
-     -o-transition: all .3s ease-in-out;
-     transition: all .3s ease-in-out;
+    color: #1f1f1f;
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 h1,
@@ -59,46 +59,46 @@ h3,
 h4,
 h5,
 h6 {
-     letter-spacing: 0;
-     font-weight: normal;
-     position: relative;
-     padding: 0 0 10px 0;
-     font-weight: normal;
-     line-height: normal;
-     color: #111111;
-     margin: 0
+    letter-spacing: 0;
+    font-weight: normal;
+    position: relative;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    line-height: normal;
+    color: #111111;
+    margin: 0
 }
 
 h1 {
-     font-size: 24px
+    font-size: 24px
 }
 
 h2 {
-     font-size: 22px
+    font-size: 22px
 }
 
 h3 {
-     font-size: 18px
+    font-size: 18px
 }
 
 h4 {
-     font-size: 16px
+    font-size: 16px
 }
 
 h5 {
-     font-size: 14px
+    font-size: 14px
 }
 
 h6 {
-     font-size: 13px
+    font-size: 13px
 }
 
 *,
 *::after,
 *::before {
-     -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 h1 a,
@@ -107,124 +107,124 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-     color: #212121;
-     text-decoration: none!important;
-     opacity: 1
+    color: #212121;
+    text-decoration: none!important;
+    opacity: 1
 }
 
 button:focus {
-     outline: none;
+    outline: none;
 }
 
 ul,
 li,
 ol {
-     margin: 0px;
-     padding: 0px;
-     list-style: none;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
 }
 
 p {
-     margin: 20px;
-     font-weight: 300;
-     font-size: 15px;
-     line-height: 24px;
+    margin: 20px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
 }
 
 a {
-     color: #222222;
-     text-decoration: none;
-     outline: none !important;
+    color: #222222;
+    text-decoration: none;
+    outline: none !important;
 }
 
 a,
 .btn {
-     text-decoration: none !important;
-     outline: none !important;
-     -webkit-transition: all .3s ease-in-out;
-     -moz-transition: all .3s ease-in-out;
-     -ms-transition: all .3s ease-in-out;
-     -o-transition: all .3s ease-in-out;
-     transition: all .3s ease-in-out;
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 img {
-     max-width: 100%;
-     height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
- :focus {
-     outline: 0;
+:focus {
+    outline: 0;
 }
 
 .paddind_bottom_0 {
-     padding-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .btn-custom {
-     margin-top: 20px;
-     background-color: transparent !important;
-     border: 2px solid #ddd;
-     padding: 12px 40px;
-     font-size: 16px;
+    margin-top: 20px;
+    background-color: transparent !important;
+    border: 2px solid #ddd;
+    padding: 12px 40px;
+    font-size: 16px;
 }
 
 .lead {
-     font-size: 18px;
-     line-height: 30px;
-     color: #767676;
-     margin: 0;
-     padding: 0;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767676;
+    margin: 0;
+    padding: 0;
 }
 
 .form-control:focus {
-     border-color: #ffffff !important;
-     box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+    border-color: #ffffff !important;
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
 }
 
 .navbar-form input {
-     border: none !important;
+    border: none !important;
 }
 
 .badge {
-     font-weight: 500;
+    font-weight: 500;
 }
 
 blockquote {
-     margin: 20px 0 20px;
-     padding: 30px;
+    margin: 20px 0 20px;
+    padding: 30px;
 }
 
 button {
-     border: 0;
-     margin: 0;
-     padding: 0;
-     cursor: pointer;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
 }
 
 .full {
-     float: left;
-     width: 100%;
+    float: left;
+    width: 100%;
 }
 
 .layout_padding {
-     padding-top: 90px;
-     padding-bottom: 0px;
+    padding-top: 90px;
+    padding-bottom: 0px;
 }
 
 
 .header_section {
     width: 100%;
     float: left;
-    background-color: #03164c;
+    background-color: black !important;
     height: auto;
     padding-top: 27px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 }
 
 .logo{ 
-	width: 100%;
-	float: left;
+    width: 100%;
+    float: left;
     text-align: center;
 }
 
@@ -234,8 +234,8 @@ button {
 }
 
 .menu_text ul {
-	margin: 0px;
-	padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .menu_text li {
@@ -315,30 +315,30 @@ button {
 }
 
 .find_text{
-	width: 100%;
-	float: left;
-	font-weight: bold;
-	font-size: 60px;
-	color: #fffcf4;
-	text-align: center;
+    width: 100%;
+    float: left;
+    font-weight: bold;
+    font-size: 60px;
+    color: #fffcf4;
+    text-align: center;
 }
 
 .crush_text{
-	width: 100%;
-	float: left;
-	font-weight: bold;
-	font-size: 46px;
-	color: #03164c;
-	padding: 10px 30px;
-	text-align: center;
+    width: 100%;
+    float: left;
+    font-weight: bold;
+    font-size: 46px;
+    color: #03164c;
+    padding: 10px 30px;
+    text-align: center;
 }
 
 .long_text{
-	width: 100%;
-	float: left;
-	font-size: 20px;
-	color: #060606;
-	text-align: center;
+    width: 100%;
+    float: left;
+    font-size: 20px;
+    color: #060606;
+    text-align: center;
 }
 
 .contact {
@@ -636,16 +636,16 @@ button {
     color: #ffffff;
 }
 .choose_bt a:hover{ 
-	color: #000; 
+    color: #000; 
 }
 
 .our_price_section{
-	width: 100%;
-	float: left;
+    width: 100%;
+    float: left;
 }
 
 .our_price{
-    width: 20%;
+    /* width: 50%; */
     margin: 0 auto;
     text-align: center;
     font-size: 40px;
@@ -655,9 +655,9 @@ button {
 }
 
 .price_section_2{
-	width: 100%;
-	float: left;
-	margin-top: 50px;
+    width: 100%;
+    float: left;
+    margin-top: 50px;
 }
 
 .beginner {
@@ -681,38 +681,38 @@ button {
 }
 
 .access_text{
-	width: 100%;
-	float: left;
-	text-align: center;
-	font-size: 16px;
-	color: #fffcf4;
-	margin-left: 0px;
-	margin-top: 0px;
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    color: #fffcf4;
+    margin-left: 0px;
+    margin-top: 0px;
 }
 
 .beginner_text{
-	width: 100%;
-	float: left;
-	color: #fffcf4;
-	text-align: center;
-	font-size: 18px;
-	font-weight: bold;
+    width: 100%;
+    float: left;
+    color: #fffcf4;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .plan_text{
-	width: 100%;
-	float: left;
-	text-align: center;
-	font-size: 40px;
-	color: #fffcf4;
-	margin-left: 0px;
-	margin-top: 0px;
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 40px;
+    color: #fffcf4;
+    margin-left: 0px;
+    margin-top: 0px;
 }
 
 .select_boton{
-	width: 100%;
-	float: left;
-	margin-top: 30px;
+    width: 100%;
+    float: left;
+    margin-top: 30px;
 }
 
 .select_bt {
@@ -760,7 +760,7 @@ button {
     color: #fffcf4;
 }
 .premium_bt a:hover{ 
-	color: #000; 
+    color: #000; 
 }
 
 .contact_section {
@@ -771,8 +771,8 @@ button {
 
 
 .background_bg{
-	width: 100%;
-	float: left;
+    width: 100%;
+    float: left;
     height: auto;
     background-image: url(../images/contact-bg.png);
     background-size: 100%;
@@ -844,7 +844,7 @@ button {
 .footer_section {
     width: 100%;
     float: left;
-    background-color: #041445;
+    background-color:lightslategrey;
     height: auto;
 }
 

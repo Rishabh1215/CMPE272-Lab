@@ -333,7 +333,7 @@ padding: 126px 40px;
 
 .menu_text li a{ display: none; }
 .toggle_menu { top: -44px; position: relative; left: 495px; }
-.header_section { padding-bottom: 15px; padding-top: 15px; }
+.header_section { padding-bottom: 25px; padding-top: 15px; }
 .menu_text { height: 0px; }
 .find_text { font-size: 32px; }
 .crush_text { font-size: 26px; padding: 0px; }
