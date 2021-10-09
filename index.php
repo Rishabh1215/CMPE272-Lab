@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <?php require "login.php" ?>
   <!-- basic -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,6 +31,7 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
 </head>
 
@@ -49,6 +51,9 @@
               <li><a href="./price.php">SERVICES</a></li>
               <li><a href="./gym.php">NEWS</a></li>
               <li><a href="./contact.php">CONTACT</a></li>
+              <li><a href="" data-toggle="modal" data-target="#modalLoginForm">LOGIN
+                </a></li>
+              <!-- <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li> -->
               <!-- <li><a href="#"><img src="images/search-icon.png"></a></li> -->
               <div id="myNav" class="overlay">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
