@@ -73,52 +73,56 @@
     </div>
     <!-- header section end -->
     <!-- our price section start -->
-    <div class="container">
-        <div class="wrap"> 
-            <a href="./createUser.php" class="btn btn-primary">Create User</a>
-            <a href="./searchUser.php" class="btn btn-primary">Search User</a>
-        </div>
+    <div class="paragraph">
+        <pre><h1 class="h1Header" style="padding-left: 100px;">
+          Searched Users</h1>
+        </pre>
     </div>
-
-    <!-- our price section end -->
-    <!-- footer section start -->
-    <div class="footer_section layout_padding">
-        <div class="footer_section_2">
-            <div class="container">
-                <div class="row map_addres">
-                    <div class="col-sm-12 col-lg-4">
-                        <div class="map_text"><img src="images/map-icon.png"><span class="map_icon">No.123 Chalingt Gates, Supper market New York</span></div>
-                    </div>
-                    <div class="col-sm-12 col-lg-4">
-                        <div class="map_text"><img src="images/phone-icon.png"><span class="map_icon">
-                                <!-- Exporting contacts from PHP File -->
-                                <?php
-                                $file = fopen("./txt/contacts.txt", "r");
-
-                                while (!feof($file)) {
-                                    $result = fgets($file);
-                                    echo $result . '<br/>';
-                                }
-
-                                fclose($file);
-                                ?>
-                            </span></div>
-                    </div>
-                    <div class="col-sm-12 col-lg-4">
-                        <div class="map_text"><img src="images/email-icon.png"><span class="map_icon">demo@gmail.com</span></div>
-                    </div>
-                </div>
-                <div class="social_icon">
-                    <ul>
-                        <li><a href="#"><img src="images/fb-icon.png"></a></li>
-                        <li><a href="#"><img src="images/twitter-icon.png"></a></li>
-                        <li><a href="#"><img src="images/in-icon.png"></a></li>
-                        <li><a href="#"><img src="images/instagram-icon.png"></a></li>
-                    </ul>
-                </div>
-                <p class="copyright_text">Copyright 2021 All Right Reserved.</p>
-            </div>
-        </div>
+    <div class="row align-items-center">
+        <h4 class='contacts'>
+            <?php
+            session_start();
+            $query = '';
+            $con = mysqli_connect('localhost', 'root', '#i0QHbk24Z');
+            mysqli_select_db($con, 'fitness');
+            if ($_POST['check'] === 'names') {
+                $query = 'select * from user where first_name="' . $_POST['first_name'] . '"';
+                $result = mysqli_query($con, $query);
+                if ($result->num_rows > 0) {
+                    while ($row = $result->fetch_assoc()) {
+                        echo "Name: " . $row["first_name"] . " " . $row["last_name"] . "<br> Email: " . $row["email"] . "<br> Address: " . $row["home_address"] . "<br> Home Phone: " . $row["home_phone"] . "<br> Cell Phone: " . $row["cell_phone"] . "<br><br>";
+                        echo "------------------------------------------------------------------------</br>";
+                    }
+                } else {
+                    echo "No such user found";
+                }
+            } else if ($_POST['check'] === 'email') {
+                $query = 'select * from user where email="' . $_POST['emailId'] . '"';
+                $result = mysqli_query($con, $query);
+                if ($result->num_rows > 0) {
+                    // output data of each row
+                    while ($row = $result->fetch_assoc()) {
+                        echo "Name: " . $row["first_name"] . " " . $row["last_name"] . "<br> Email: " . $row["email"] . "<br> Address: " . $row["home_address"] . "<br> Home Phone: " . $row["home_phone"] . "<br> Cell Phone: " . $row["cell_phone"] . "<br><br>";
+                        echo "------------------------------------------------------------------------</br>";
+                    }
+                } else {
+                    echo "No such user found";
+                }
+            } else if ($_POST['check'] === "phoneNumber") {
+                $query = 'select * from user where cell_phone="' . $_POST['phone_number'] . '"';
+                $result = mysqli_query($con, $query);
+                if ($result->num_rows > 0) {
+                    // output data of each row
+                    while ($row = $result->fetch_assoc()) {
+                        echo "Name: " . $row["first_name"] . " " . $row["last_name"] . "<br> Email: " . $row["email"] . "<br> Address: " . $row["home_address"] . "<br> Home Phone: " . $row["home_phone"] . "<br> Cell Phone: " . $row["cell_phone"] . "<br><br>";
+                        echo "------------------------------------------------------------------------</br>";
+                    }
+                } else {
+                    echo "No such user found";
+                }
+            }
+            ?>
+        </h4>
     </div>
     <!-- footer section end -->
 
