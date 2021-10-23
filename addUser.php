@@ -9,7 +9,7 @@
 
     $con =mysqli_connect('locahost','pmauser','#i0QHbk24Z');
     mysqli_select_db($con,'fitness');
-    $query="insert into user values (null,'$first_name','$last_name','$email','$home_address','$home_phone','$cell_phone')";
+    $query="insert into users (first_name, last_name, email, home_address, home_phone, cell_phone) values ('$first_name','$last_name','$email','$home_address','$home_phone','$cell_phone')";
     echo $query;
     $result=mysqli_query($con,$query);
     echo $result;
