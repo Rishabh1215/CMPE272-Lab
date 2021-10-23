@@ -37,7 +37,6 @@
 
 <body>
   <!--header section start -->
-<?php require './dbconnect.php'?>
   <div class="header_section">
     <div class="container-fluid">
       <div class="row">
