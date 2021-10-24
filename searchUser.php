@@ -30,6 +30,20 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <script>
+        function getInput() {
+            var Inputtype = document.getElementById('inputState').value;
+            if (Inputtype == "names") {
+                document.getElementById('options').innerHTML = '<label for="exampleInputEmail1">First Name</label><input type="text" class="form-control" id="exampleInputEmail1" placeholder="First Name" name="first_name" required> </div><button type="submit" class="btn btn-success">SEARCH</button></div>';
+            } else if (Inputtype == "email") {
+                document.getElementById('options').innerHTML = '<label for="exampleInputEmail1">Email</label><input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" name="emailId" required></div><button type="submit" class="btn btn-success">SEARCH</button></div>';
+            } else if (Inputtype == "phoneNumber") {
+                document.getElementById('options').innerHTML = '<label for="exampleInputEmail1">Phone Number</label><input type="text" pattern="[1-9]{1}[0-9]{9}" class="form-control" id="exampleInputEmail1" placeholder="Phone Number" name="phone_number" required></div><button type="submit" class="btn btn-success">SEARCH</button></div>';
+            } else if (Inputtype == "...") {
+                document.getElementById('options').innerHTML = "";
+            }
+        }
+    </script>
 
 </head>
 
@@ -87,7 +101,7 @@
                         <div class="form-group col-md-6">
                             <label for="inputState">Choose The Criteria To Search</label>
                             <select id="inputState" class="form-control" onchange="getInput()" name="check">
-                                <option value="..." selected>...</option>
+                                <option value="..." selected>Filter</option>
                                 <option value="names">name</option>
                                 <option value="email">Email ID</option>
                                 <option value="phoneNumber">Phone Number</option>
@@ -101,7 +115,9 @@
 
                         </div>
                     </div>
+                </form>
             </div>
+        </div>
             <!-- our price section end -->
             <!-- footer section start -->
             <div class="footer_section layout_padding">
@@ -143,11 +159,6 @@
                 </div>
             </div>
             <!-- footer section end -->
-
-
-
-
-
 
             <!-- Javascript files-->
             <script src="js/jquery.min.js"></script>

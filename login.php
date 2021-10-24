@@ -28,16 +28,6 @@
                     </button>
                 </div>
 
-                <?php
-                session_start();
-
-                if (isset($_SESSION['message'])) {
-                    $message = $_SESSION['message'];
-                } else {
-                    $message = "";
-                }
-                ?>
-
                 <div class="modal-body mx-3">
                     <div class="md-form mb-5">
                         <i class="fas fa-envelope prefix grey-text"></i>

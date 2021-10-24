@@ -81,9 +81,10 @@
     <div class="row align-items-center">
         <h4 class='contacts'>
             <?php
-            session_start();
+            // session_start();
             $query = '';
-            $con = mysqli_connect('localhost', 'root', '#i0QHbk24Z');
+            // $con = mysqli_connect('localhost', 'root', '');
+            $con = mysqli_connect('localhost', 'pmauser', '#i0QHbk24Z');
             mysqli_select_db($con, 'fitness');
             if ($_POST['check'] === 'names') {
                 $query = 'select * from user where first_name="' . $_POST['first_name'] . '"';

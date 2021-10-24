@@ -79,15 +79,6 @@
             <a href="./searchUser.php" class="btn btn-primary">Search User</a>
         </div>
     </div>
-
-    <?php
-    session_start();
-    if (isset($_SESSION['result'])) {
-        echo '<h1>' . $_SESSION['result'] . '</h1>';
-        $_SESSION['result'] = "";
-    }
-
-    ?>
     <!-- our price section end -->
     <!-- footer section start -->
     <div class="footer_section layout_padding">
