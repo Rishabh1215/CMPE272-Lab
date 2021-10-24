@@ -37,6 +37,7 @@
                       <span aria-hidden="true">×</span>
                     </button>
                   </div>';
+                  header('location:users.php');
             } else {
                 // echo "The record was not inserted successfully because of this error ---> ". mysqli_error($conn);
                 echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -46,6 +47,7 @@
                     </button>
                   </div>';
                 echo mysqli_error($conn);
+                header('location:users.php');
             }
         }
     }
