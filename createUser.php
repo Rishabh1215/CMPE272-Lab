@@ -81,9 +81,9 @@
           Create User</h1>
         </pre>
         </div>
-        <div class="row align-items-center">
+        <div class="row align-items-center" style="margin-bottom: 2rem;">
             <div class="container divContainer">
-                <h3>Register User</h3>
+                <h3 style="font-weight: bold; font-family: system-ui;">Register User</h3>
                 <form method="post" action="./addUser.php">
                     <div class="form-group">
                         <label>First Name</label>

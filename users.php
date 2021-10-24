@@ -73,10 +73,13 @@
     </div>
     <!-- header section end -->
     <!-- our price section start -->
-    <div class="container">
-        <div class="wrap">
-            <a href="./createUser.php" class="btn btn-primary">Create User</a>
-            <a href="./searchUser.php" class="btn btn-primary">Search User</a>
+    <div class="row">
+        <div class="col-12" style="display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 190px;">
+            <a href="./createUser.php" class="btn btn-primary" style="margin-right: 85px; background: brown; border: aliceblue;">Create User</a>
+            <a href="./searchUser.php" class="btn btn-success">Search User</a>
         </div>
     </div>
     <!-- our price section end -->
