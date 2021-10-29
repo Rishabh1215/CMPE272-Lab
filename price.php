@@ -76,8 +76,7 @@
     <div class="our_price_section layout_padding about_main">
         <div class="container">
             <h1 class="our_price"><strong>OUR PRICE</strong></h1>
-            <p class="client_long_text">t is a long established fact that a reader will be distracted by the readable content
-                of a page when looking at its layout. The point of using Lorem Ipsum is tha</p>
+            <p class="client_long_text">Whether you're just starting out―or starting again―this fast-track workout plan will help you drastically improve your physique and fitness levels.</p>
             <div class="price_section_2">
                 <div class="row">
                     <div class="col-sm-12 col-lg-4">
@@ -91,13 +90,13 @@
                             <P class="free_text">1 Free personal training</P>
                         </div>
                         <div class="select_boton">
-                            <div class="select_bt"><a href="#">SELECT PLAN</a></div>
+                            <div class="select_bt"><a href="./singleProduct.php?id=1">SELECT PLAN</a></div>
                         </div>
                     </div>
                     <div class="col-sm-12 col-lg-4">
                         <div class="premium">
                             <h2 class="beginner_text">PREMIUM PLAN</h2>
-                            <h1 class="plan_text">$70</h1>
+                            <h1 class="plan_text">$50</h1>
                             <P class="access_text">Unlimited access to the gym</P>
                             <P class="access_text">3 classes per week</P>
                             <P class="access_text">Four Year memberships</P>
@@ -105,13 +104,13 @@
                             <P class="free_text">3 Free personal training</P>
                         </div>
                         <div class="select_boton">
-                            <div class="premium_bt"><a href="#">SELECT PLAN</a></div>
+                            <div class="premium_bt"><a href="./singleProduct.php?id=2">SELECT PLAN</a></div>
                         </div>
                     </div>
                     <div class="col-sm-12 col-lg-4">
                         <div class="beginner">
                             <h2 class="beginner_text">ULTIMATE PLAN</h2>
-                            <h1 class="plan_text">$100</h1>
+                            <h1 class="plan_text">$70</h1>
                             <P class="access_text">Unlimited access to the gym</P>
                             <P class="access_text">4 classes per week</P>
                             <P class="access_text">Three Year memberships</P>
@@ -119,7 +118,106 @@
                             <P class="free_text">8 Free personal training</P>
                         </div>
                         <div class="select_boton">
-                            <div class="select_bt"><a href="#">SELECT PLAN</a></div>
+                            <div class="select_bt"><a href="./singleProduct.php?id=3">SELECT PLAN</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 mt-4">
+                        <div class="beginner">
+                            <h2 class="beginner_text">BEGINNER PLAN (LEVEL 1)</h2>
+                            <h1 class="plan_text">$45</h1>
+                            <P class="access_text">Unlimited access to the gym</P>
+                            <P class="access_text">3 classes per week</P>
+                            <P class="access_text">One Year memberships</P>
+                            <P class="access_text">FREE drinking package</P>
+                            <P class="free_text">1 Free personal training</P>
+                        </div>
+                        <div class="select_boton">
+                            <div class="select_bt"><a href="./singleProduct.php?id=4">SELECT PLAN</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 mt-4">
+                        <div class="premium">
+                            <h2 class="beginner_text">PREMIUM PLAN (LEVEL 1)</h2>
+                            <h1 class="plan_text">$60</h1>
+                            <P class="access_text">Unlimited access to the gym</P>
+                            <P class="access_text">3 classes per week</P>
+                            <P class="access_text">Four Year memberships</P>
+                            <P class="access_text">FREE drinking package</P>
+                            <P class="free_text">3 Free personal training</P>
+                        </div>
+                        <div class="select_boton">
+                            <div class="premium_bt"><a href="./singleProduct.php?id=5">SELECT PLAN</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 mt-4">
+                        <div class="beginner">
+                            <h2 class="beginner_text">ULTIMATE PLAN (LEVEL 1)</h2>
+                            <h1 class="plan_text">$75</h1>
+                            <P class="access_text">Unlimited access to the gym</P>
+                            <P class="access_text">3 classes per week</P>
+                            <P class="access_text">Four Year memberships</P>
+                            <P class="access_text">FREE drinking package</P>
+                            <P class="free_text">3 Free personal training</P>
+                        </div>
+                        <div class="select_boton">
+                            <div class="select_bt"><a href="./singleProduct.php?id=6">SELECT PLAN</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 mt-4">
+                        <div class="beginner">
+                            <h2 class="beginner_text">BEGINNER PLAN (LEVEL 2)</h2>
+                            <h1 class="plan_text">$49</h1>
+                            <P class="access_text">Unlimited access to the gym</P>
+                            <P class="access_text">3 classes per week</P>
+                            <P class="access_text">Four Year memberships</P>
+                            <P class="access_text">FREE drinking package</P>
+                            <P class="free_text">3 Free personal training</P>
+                        </div>
+                        <div class="select_boton">
+                            <div class="select_bt"><a href="./singleProduct.php?id=7">SELECT PLAN</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 mt-4">
+                        <div class="premium">
+                            <h2 class="beginner_text">PREMIUM PLAN (LEVEL 2)</h2>
+                            <h1 class="plan_text">$59</h1>
+                            <P class="access_text">Unlimited access to the gym</P>
+                            <P class="access_text">3 classes per week</P>
+                            <P class="access_text">Four Year memberships</P>
+                            <P class="access_text">FREE drinking package</P>
+                            <P class="free_text">3 Free personal training</P>
+                        </div>
+                        <div class="select_boton">
+                            <div class="premium_bt"><a href="./singleProduct.php?id=8">SELECT PLAN</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 mt-4">
+                        <div class="beginner">
+                            <h2 class="beginner_text">ULTIMATE PLAN (LEVEL 2)</h2>
+                            <h1 class="plan_text">$69</h1>
+                            <P class="access_text">Unlimited access to the gym</P>
+                            <P class="access_text">3 classes per week</P>
+                            <P class="access_text">Four Year memberships</P>
+                            <P class="access_text">FREE drinking package</P>
+                            <P class="free_text">3 Free personal training</P>
+                        </div>
+                        <div class="select_boton">
+                            <div class="select_bt"><a href="./singleProduct.php?id=9">SELECT PLAN</a></div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-4 mt-4">
+                        <div class="beginner">
+                            <h2 class="beginner_text">PRO PLAN</h2>
+                            <h1 class="plan_text">$150</h1>
+                            <P class="access_text">Unlimited access to the gym</P>
+                            <P class="access_text">3 classes per week</P>
+                            <P class="access_text">Four Year memberships</P>
+                            <P class="access_text">FREE drinking package</P>
+                            <P class="free_text">3 Free personal training</P>
+                        </div>
+                        <div class="select_boton">
+                            <div class="premium_bt"><a href="./singleProduct.php?id=10">SELECT PLAN</a></div>
                         </div>
                     </div>
                 </div>
