@@ -16,7 +16,6 @@ $prod = $result->fetch_assoc();
 <?php
 if (isset($_COOKIE["lastids"])) {
     if (explode(",", $_COOKIE["lastids"])[0] != $prod["id"]) {
-        echo $prod["id"] . "," . $_COOKIE["lastids"];
         setcookie("lastids", $prod["id"] . "," . $_COOKIE["lastids"], time() + (86400 * 30));
     }
 } else {
