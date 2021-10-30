@@ -55,6 +55,7 @@
               <li><a href="" data-toggle="modal" data-target="#modalLoginForm">LOGIN
                 </a></li>
                 <li><a href="./users.php">USERS</a></li>
+                <li><a href="./top.php">TOP VIEWED</a></li>
               <!-- <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li> -->
               <!-- <li><a href="#"><img src="images/search-icon.png"></a></li> -->
               <div id="myNav" class="overlay">

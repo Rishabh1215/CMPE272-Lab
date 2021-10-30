@@ -1,29 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php
-// $con = mysqli_connect('localhost', 'root', '');
-$con = mysqli_connect('localhost', 'pmauser', '#i0QHbk24Z');
-mysqli_select_db($con, 'fitness');
-$query = 'select * from services where id="' . $_GET['id'] . '"';
-$result = mysqli_query($con, $query);
-$prod = $result->fetch_assoc();
-// $hits = $prod["hits"] + 1;
-// $conn->query("UPDATE products SET hits = " . $hits . " WHERE id = " . $id . ";");
-// $conn->close();
-?>
-
-<?php
-if (isset($_COOKIE["lastids"])) {
-    if (explode(",", $_COOKIE["lastids"])[0] != $prod["id"]) {
-        echo $prod["id"] . "," . $_COOKIE["lastids"];
-        setcookie("lastids", $prod["id"] . "," . $_COOKIE["lastids"], time() + (86400 * 30));
-    }
-} else {
-    setcookie("lastids", $prod["id"], time() + (86400 * 30));
-}
-?>
-
 <head>
     <!-- basic -->
     <meta charset="utf-8">
@@ -72,6 +49,7 @@ if (isset($_COOKIE["lastids"])) {
                             <li><a href="./price.php">SERVICES</a></li>
                             <li><a href="./gym.php">NEWS</a></li>
                             <li><a href="./contact.php">CONTACT</a></li>
+
                             <!-- <li><a href="#"><img src="images/search-icon.png"></a></li> -->
                             <div id="myNav" class="overlay">
                                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -100,19 +78,34 @@ if (isset($_COOKIE["lastids"])) {
         <div class="container">
             <h1 class="our_price"><strong>OUR PRICE</strong></h1>
             <p class="client_long_text">Whether you're just starting out―or starting again―this fast-track workout plan will help you drastically improve your physique and fitness levels.</p>
+
             <div class="price_section_2">
+                <h2 style="display: flex; justify-content:center; align-items:center;"><b>Your Last 5 viewed</b></h2>
                 <div class="row" style="display: flex; justify-content:center; align-items:center;">
-                    <div class="col-sm-12 col-lg-4">
-                        <div class="beginner">
-                            <h2 class="beginner_text"><?php echo $prod["title"] ?></h2>
-                            <h1 class="plan_text">$<?php echo $prod["price"] ?></h1>
-                            <P class="access_text">Unlimited access to the gym</P>
-                            <P class="access_text">3 classes per week</P>
-                            <P class="access_text">One Year memberships</P>
-                            <P class="access_text">FREE drinking package</P>
-                            <P class="free_text">1 Free personal training</P>
-                        </div>
-                    </div>
+                    <?php
+                    if (isset($_COOKIE["lastids"])) {
+                        echo "<table>";
+                        echo "<tr>";
+                        echo "<th><h2>Titles</h2></th>";
+                        echo "</tr>";
+                        $hits = explode(",", $_COOKIE["lastids"]);
+                        $viewed = array();
+                        // $con = mysqli_connect('localhost', 'root', '');
+                        $con = mysqli_connect('localhost', 'pmauser', '#i0QHbk24Z');
+                        mysqli_select_db($con, 'fitness');
+                        for ($i = 0; $i < 5 and $i < sizeof($hits); $i++) {
+                            $result = $con->query("SELECT * FROM services where id = " . $hits[$i] . ";");
+                            $row = $result->fetch_assoc();
+                            echo "<tr>";
+                            echo "<td><h2><a href='./singleProduct.php?id=" . $row["id"] . "'>" . $row["title"] . "</h2></a></td>";
+                            echo "</tr>";
+                            array_push($viewed, $hits[$i]);
+                        }
+                        echo "</table>";
+                    } else {
+                        echo "You have not viewed any products";
+                    }
+                    ?>
                 </div>
             </div>
         </div>
