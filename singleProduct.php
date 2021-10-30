@@ -8,9 +8,9 @@ mysqli_select_db($con, 'fitness');
 $query = 'select * from services where id="' . $_GET['id'] . '"';
 $result = mysqli_query($con, $query);
 $prod = $result->fetch_assoc();
-// $hits = $prod["hits"] + 1;
-// $conn->query("UPDATE products SET hits = " . $hits . " WHERE id = " . $id . ";");
-// $conn->close();
+$hits = $prod["hits"] + 1;
+$con->query("UPDATE services SET hits = " . $hits . " WHERE id = " . $_GET['id'] . ";");
+$con->close();
 ?>
 
 <?php

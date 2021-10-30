@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+// $con = mysqli_connect('localhost', 'root', '');
+$con = mysqli_connect('localhost', 'pmauser', '#i0QHbk24Z');
+mysqli_select_db($con, 'fitness');
+?>
 
 <head>
     <!-- basic -->
@@ -80,24 +85,86 @@
             <p class="client_long_text">Whether you're just starting out―or starting again―this fast-track workout plan will help you drastically improve your physique and fitness levels.</p>
 
             <div class="price_section_2">
-                <h2 style="display: flex; justify-content:center; align-items:center;"><b>Your Last 5 viewed</b></h2>
+                <h2 style="display: flex; justify-content:center; align-items:center;"><b>Global Top Viewed Products</b></h2>
+                <div class="row" style="display: flex; justify-content:center; align-items:center;">
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th style="margin-left: 1rem;">Viewed</th>
+                        </tr>
+                        <?php
+                        $sql = "SELECT * FROM services ORDER BY hits DESC";
+                        $results = $con->query($sql);
+                        for ($i = 0; $i < 5; $i++) {
+                            $row = $results->fetch_assoc();
+                            echo "<tr>";
+                            echo "<td><a href='./singleProduct.php?id=" . $row["id"] . "'>" . $row["title"] . "</a></td>";
+                            echo "<td>" . $row["hits"] . "</td>";
+                            echo "</tr>";
+                        }
+
+                        ?>
+                    </table>
+                </div>
+                <h2 style="display: flex; justify-content:center; align-items:center;margin-top:1rem;">
+                    <b>Your 5 Most Visited Products</b>
+                </h2>
                 <div class="row" style="display: flex; justify-content:center; align-items:center;">
                     <?php
                     if (isset($_COOKIE["lastids"])) {
                         echo "<table>";
                         echo "<tr>";
-                        echo "<th><h2>Titles</h2></th>";
+                        echo "<th>Name</th>";
+                        echo "<th>Viewed</th>";
+                        echo "</tr>";
+                        $heatmap = array();
+                        foreach (explode(",", $_COOKIE["lastids"]) as $id) {
+                            if (isset($heatmap[$id])) {
+                                $heatmap[$id] = $heatmap[$id] + 1;
+                            } else {
+                                $heatmap[$id] = 1;
+                            }
+                        }
+                        for ($i = 0; $i < 5; $i++) {
+                            $max = 0;
+                            $maxid = 0;
+                            foreach ($heatmap as $key => $value) {
+                                if ($value > $max) {
+                                    $max = $value;
+                                    $maxid = $key;
+                                }
+                            }
+                            $result = $con->query("SELECT * FROM services where id = " . $maxid . ";");
+                            $row = $result->fetch_assoc();
+                            echo "<tr>";
+                            echo "<td><a href='./singleProduct.php?id=" . $row["id"] . "'>" . $row["title"] . "</a></td>";
+                            echo "<td>" . $max . "</td>";
+                            echo "</tr>";
+                            unset($heatmap[$maxid]);
+                        }
+                    } else {
+                        echo "You have not viewed any products";
+                    }
+                    echo "</table>";
+                    ?>
+                </div>
+
+                <h2 style="display: flex; justify-content:center; align-items:center; margin-top:1rem;"><b>Your 5 Last Viewed Products</b></h2>
+                <div class="row" style="display: flex; justify-content:center; align-items:center;">
+                    <?php
+                    if (isset($_COOKIE["lastids"])) {
+                        echo "<table>";
+                        echo "<tr>";
+                        echo "<th>Name</th>";
                         echo "</tr>";
                         $hits = explode(",", $_COOKIE["lastids"]);
                         $viewed = array();
-                        // $con = mysqli_connect('localhost', 'root', '');
-                        $con = mysqli_connect('localhost', 'pmauser', '#i0QHbk24Z');
-                        mysqli_select_db($con, 'fitness');
+
                         for ($i = 0; $i < 5 and $i < sizeof($hits); $i++) {
                             $result = $con->query("SELECT * FROM services where id = " . $hits[$i] . ";");
                             $row = $result->fetch_assoc();
                             echo "<tr>";
-                            echo "<td><h2><a href='./singleProduct.php?id=" . $row["id"] . "'>" . $row["title"] . "</h2></a></td>";
+                            echo "<td><a href='./singleProduct.php?id=" . $row["id"] . "'>" . $row["title"] . "</a></td>";
                             echo "</tr>";
                             array_push($viewed, $hits[$i]);
                         }
