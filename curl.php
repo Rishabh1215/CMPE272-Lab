@@ -1,7 +1,7 @@
 <?php
 
 $curl_handle = curl_init();
-curl_setopt($curl_handle, CURLOPT_URL, "http://localhost/CMPE272-Lab/expose.php");
+// curl_setopt($curl_handle, CURLOPT_URL, "http://localhost/CMPE272-Lab/expose.php");
 curl_setopt($curl_handle, CURLOPT_URL, "https://rs1215.me/expose.php");
 curl_setopt($curl_handle, CURLOPT_HEADER, 0);
 curl_setopt($curl_handle, CURLOPT_RETURNTRANSFER, true);
