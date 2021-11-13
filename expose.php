@@ -1,6 +1,6 @@
 <?php
 // $con = mysqli_connect('localhost', 'root', '');
-// $con = mysqli_connect('localhost', 'pmauser', '#i0QHbk24Z');/
+$con = mysqli_connect('localhost', 'pmauser', '#i0QHbk24Z');
 mysqli_select_db($con, 'fitness');
 
 ?>
