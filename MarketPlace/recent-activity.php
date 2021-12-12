@@ -17,11 +17,11 @@ $result4 = $mysqli->query($query4);
 ?>
 
 <center>
-  <h2 style="color: #777">Recent Activities</h2>
+  <h2 style="color: #777; margin-bottom: 2rem; margin-top: 2rem;">Recent Activities</h2>
 </center>
 
 <h4 class="px-3"> Top 5 recent activities in <?php echo $domains[0] ?></h4>
-<div class="panel-body m-3" style="background-color: white">
+<div class="panel-body m-3" style="background-color: white; margin-bottom: 2rem;">
   <?php $i = 1;
   while ($row = $result1->fetch_row()) { ?>
     <div class='d-sm-flex justify-content-between border-sm-bottom'>
@@ -36,7 +36,7 @@ $result4 = $mysqli->query($query4);
 
 
 <h4 class="px-3"> Top 5 recent activities in <?php echo $domains[1] ?></h4>
-<div class="panel-body m-3" style="background-color: white">
+<div class="panel-body m-3" style="background-color: white; margin-bottom: 2rem;">
   <?php $i = 1;
   while ($row = $result2->fetch_row()) { ?>
     <div class='d-sm-flex justify-content-between border-sm-bottom'>
@@ -51,7 +51,7 @@ $result4 = $mysqli->query($query4);
 
 
 <h4 class="px-3"> Top 5 recent activities in <?php echo $domains[2] ?></h4>
-<div class="panel-body m-3" style="background-color: white">
+<div class="panel-body m-3" style="background-color: white; margin-bottom: 2rem;">
   <?php $i = 1;
   while ($row = $result3->fetch_row()) { ?>
     <div class='d-sm-flex justify-content-between border-sm-bottom'>
@@ -66,7 +66,7 @@ $result4 = $mysqli->query($query4);
 
 
 <h4 class="px-3"> Top 5 recent activities in <?php echo $domains[3] ?></h4>
-<div class="panel-body m-3" style="background-color: white">
+<div class="panel-body m-3" style="background-color: white; margin-bottom: 2rem;">
   <?php $i = 1;
   while ($row = $result4->fetch_row()) { ?>
     <div class='d-sm-flex justify-content-between border-sm-bottom'>
