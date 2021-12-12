@@ -36,7 +36,8 @@ function setLastVisitedCookie(value) {
 function handleCardClick(value, name, image) {
   setLastVisitedCookie(value);
   //   window.location = `/pullo/pdp.php?id=${value}`;
-  window.location = `/CMPE272-Lab/singleProduct.php?id=${value}`;
+  // window.location = `/CMPE272-Lab/singleProduct.php?id=${value}`;
+  window.location = `/singleProduct.php?id=${value}`;
   increaseVisitCount(name, image);
 }
 
