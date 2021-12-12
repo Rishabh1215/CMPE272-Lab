@@ -5,18 +5,18 @@ function getConfig() {
       {
         name: "Pullo",
         url: "http://cmpe272.me/pullo",
-        thumbnail: `images/Homepage.png`,
+        thumbnail: `images/shoes1.png`,
       },
       {
         name: "Fitness",
         // url: "http://localhost/CMPE272-Lab/price.php",
         url: "https://rs1215.me/Fitness/price.php",
-        thumbnail: `images/banner-bg.png`,
+        thumbnail: `images/fitness.png`,
       },
       {
         name: "Sixteen-Clothing",
         url: "http://aygupta.me/product.php",
-        thumbnail: `https://media.gq.com/photos/60f9c697101cc04fad71e5cf/master/pass/BEST-BASICS-1.jpg`,
+        thumbnail: `images/six.png`,
       },
       {
         name: "Modernhomes",

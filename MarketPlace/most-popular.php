@@ -42,7 +42,7 @@ $gloablResult = $mysqli->query($globalQuery);
               <div class="card-body">
                 <h5 class="card-title"></h5>
                 <p class="card-text"><?php echo $row[3] ?></p>
-                <a href="<?php echo $row[6] ?>" class="btn btn-primary">View Product</a>
+                <a href="<?php echo $row[5] ?>" class="btn btn-primary">View Product</a>
               </div>
             </div>
           <?php } ?>
