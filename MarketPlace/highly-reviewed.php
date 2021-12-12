@@ -36,8 +36,8 @@ $result4 = $mysqli->query($query4);
       <div id="collapseZero" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingZero">
         <div class="panel-body d-sm-flex">
           <?php while ($row = $result0->fetch_row()) { ?>
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="<?php echo $row[5] ?>" alt="Card image cap">
+            <div class="card" style="width: 18rem; margin:1rem;">
+              <img class="card-img-top" style="width: 240px; height: 160px;" src="<?php echo $row[5] ?>" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title"></h5>
                 <p class="card-text"><?php echo $row[3] ?></p>
@@ -67,8 +67,8 @@ $result4 = $mysqli->query($query4);
       <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
         <div class="panel-body d-sm-flex">
           <?php while ($row = $result1->fetch_row()) { ?>
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="<?php echo $row[5] ?>" alt="Card image cap">
+            <div class="card" style="width: 18rem; margin:1rem;">
+              <img class="card-img-top" style="width: 240px; height: 160px;" src="<?php echo $row[5] ?>" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title"></h5>
                 <p class="card-text"><?php echo $row[3] ?></p>
@@ -98,8 +98,8 @@ $result4 = $mysqli->query($query4);
       <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
         <div class="panel-body d-sm-flex">
           <?php while ($row = $result2->fetch_row()) { ?>
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="<?php echo $row[5] ?>" alt="Card image cap">
+            <div class="card" style="width: 18rem; margin:1rem;">
+              <img class="card-img-top" style="width: 240px; height: 160px;" src="<?php echo $row[5] ?>" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title"></h5>
                 <p class="card-text"><?php echo $row[3] ?></p>
@@ -133,8 +133,8 @@ $result4 = $mysqli->query($query4);
       <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
         <div class="panel-body d-sm-flex">
           <?php while ($row = $result3->fetch_row()) { ?>
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="<?php echo $row[5] ?>" alt="Card image cap">
+            <div class="card" style="width: 18rem; margin:1rem;">
+              <img class="card-img-top" style="width: 240px; height: 160px;" src="<?php echo $row[5] ?>" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title"></h5>
                 <p class="card-text"><?php echo $row[3] ?></p>
@@ -169,8 +169,8 @@ $result4 = $mysqli->query($query4);
       <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
         <div class="panel-body d-sm-flex">
           <?php while ($row = $result4->fetch_row()) { ?>
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="<?php echo $row[5] ?>" alt="Card image cap">
+            <div class="card" style="width: 18rem; margin:1rem;">
+              <img class="card-img-top" style="width: 240px; height: 160px;" src="<?php echo $row[5] ?>" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title"></h5>
                 <p class="card-text"><?php echo $row[3] ?></p>

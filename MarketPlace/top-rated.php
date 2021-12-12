@@ -31,15 +31,15 @@ $gloablResult = $mysqli->query($globalQuery);
       <div class="panel-heading active" role="tab" id="headingOne">
         <h4 class="panel-title">
           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Top 5 top rated items from Market Place.
+            Top 5 top rated items from Market Place
           </a>
         </h4>
       </div>
       <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
         <div class="panel-body d-sm-flex">
           <?php while ($row = $gloablResult->fetch_row()) { ?>
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="<?php echo $row[5] ?>" alt="Card image cap">
+            <div class="card" style="width: 18rem; margin:1rem;">
+              <img class="card-img-top" style="width: 240px; height: 160px;" src="<?php echo $row[5] ?>" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title"></h5>
                 <p class="card-text"><?php echo $row[3] ?></p>
@@ -75,8 +75,8 @@ $gloablResult = $mysqli->query($globalQuery);
       <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
         <div class="panel-body d-sm-flex">
           <?php while ($row = $result1->fetch_row()) { ?>
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="<?php echo $row[5] ?>" alt="Card image cap">
+            <div class="card" style="width: 18rem; margin:1rem;">
+              <img class="card-img-top" style="width: 240px; height: 160px;" src="<?php echo $row[5] ?>" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title"></h5>
                 <p class="card-text"><?php echo $row[3] ?></p>
@@ -111,8 +111,8 @@ $gloablResult = $mysqli->query($globalQuery);
       <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
         <div class="panel-body d-sm-flex">
           <?php while ($row = $result2->fetch_row()) { ?>
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="<?php echo $row[5] ?>" alt="Card image cap">
+            <div class="card" style="width: 18rem; margin:1rem;">
+              <img class="card-img-top" style="width: 240px; height: 160px;" src="<?php echo $row[5] ?>" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title"></h5>
                 <p class="card-text"><?php echo $row[3] ?></p>
@@ -146,8 +146,8 @@ $gloablResult = $mysqli->query($globalQuery);
       <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
         <div class="panel-body d-sm-flex">
           <?php while ($row = $result3->fetch_row()) { ?>
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="<?php echo $row[5] ?>" alt="Card image cap">
+            <div class="card" style="width: 18rem; margin:1rem;">
+              <img class="card-img-top" style="width: 240px; height: 160px;" src="<?php echo $row[5] ?>" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title"></h5>
                 <p class="card-text"><?php echo $row[3] ?></p>
@@ -182,8 +182,8 @@ $gloablResult = $mysqli->query($globalQuery);
       <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
         <div class="panel-body d-sm-flex">
           <?php while ($row = $result4->fetch_row()) { ?>
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="<?php echo $row[5] ?>" alt="Card image cap">
+            <div class="card" style="width: 18rem; margin:1rem;">
+              <img class="card-img-top" style="width: 240px; height: 160px;" src="<?php echo $row[5] ?>" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title"></h5>
                 <p class="card-text"><?php echo $row[3] ?></p>
