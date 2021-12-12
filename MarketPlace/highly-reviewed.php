@@ -29,7 +29,7 @@ $result4 = $mysqli->query($query4);
       <div class="panel-heading active" role="tab" id="headingZero">
         <h4 class="panel-title">
           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
-            Top 5 Overall highly reviewed items
+            Top 5 Overall highly reviewed items from market place
           </a>
         </h4>
       </div>
@@ -73,7 +73,6 @@ $result4 = $mysqli->query($query4);
                 <h5 class="card-title"></h5>
                 <p class="card-text"><?php echo $row[3] ?></p>
                 <a href="<?php echo $row[6] ?>" class="btn btn-primary">View Product</a>
-                <p class="card-text"> No. of Reviews <?php echo $row[7] ?>
                 </p>
               </div>
             </div>
