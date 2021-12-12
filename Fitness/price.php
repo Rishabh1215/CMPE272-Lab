@@ -56,7 +56,7 @@ $products = $mysqli->query($query1);
                             <li><a href="./price.php">SERVICES</a></li>
                             <li><a href="./gym.php">NEWS</a></li>
                             <li><a href="./contact.php">CONTACT</a></li>
-                            <li> <a class="back" href='https://rs1215.me/MarketPlace/home.php'>Go back to marketplace</a></li>
+                            <li> <a class="back" href='https://rs1215.me/MarketPlace/home.php'>MARKETPLACE</a></li>
                             <!-- <li><a href="./top.php">TOP VIEWED</a></li> -->
                             <li><a href="#"><img src="images/search-icon.png"></a></li> -->
                             <div id="myNav" class="overlay">
