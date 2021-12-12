@@ -98,7 +98,7 @@ function pdpInit() {
 function httpPost(action, payload) {
   $.ajax({
     type: "POST",
-    url: "http://cmpe272.me/MarketPlace/php/api.php",
+    url: "https://cmpe272.me/MarketPlace/php/api.php",
     data: {
       action,
       ...payload,
