@@ -7,9 +7,9 @@ header("Location: https://rs1215.me/MarketPlace/login.php");
 <html>
    <head>
       <title>HTML Meta Tag</title>
-      <meta http-equiv = "refresh" content = "2; url = https://rs1215.me/MarketPlace/login.php" />
+      <meta http-equiv = "refresh" content = "0.5; url = https://rs1215.me/MarketPlace/login.php" />
    </head>
    <body>
-      <p>Common MarketPlace!</p>
+      <pLoading marketplace....</p>
    </body>
 </html>
