@@ -5,13 +5,13 @@ function getConfig() {
       {
         name: "Pullo",
         url: "http://cmpe272.me/pullo",
-        thumbnail: `images/shoes1.png`,
+        thumbnail: `images/shoes1.jpg`,
       },
       {
         name: "Fitness",
         // url: "http://localhost/CMPE272-Lab/price.php",
         url: "https://rs1215.me/Fitness/price.php",
-        thumbnail: `images/fitness.png`,
+        thumbnail: `images/fitness.jpg`,
       },
       {
         name: "Sixteen-Clothing",
