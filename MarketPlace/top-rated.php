@@ -2,7 +2,7 @@
 <?php
 require_once 'php/db.php';
 session_start();
-$domains = array('Pullo', 'Fitness', 'Pullo', 'Pullo');
+$domains = array('Pullo', 'Fitness', 'Sixteen-Clothing', 'Modernhomes');
 $query1 = "SELECT * FROM review  where domain = '$domains[0]' group by productName order by rating desc limit 5";
 $result1 = $mysqli->query($query1);
 

@@ -2,7 +2,7 @@
 <?php
 require_once 'php/db.php';
 session_start();
-$domains = array('Pullo', 'Fitness', 'Pullo', 'Pullo');
+$domains = array('Pullo', 'Fitness', 'Sixteen-Clothing', 'Modernhomes');
 $query1 = "SELECT * FROM domain where name='$domains[0]' order by visitCount desc limit 5";
 $result1 = $mysqli->query($query1);
 
