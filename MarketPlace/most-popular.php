@@ -24,7 +24,7 @@ $gloablResult = $mysqli->query($globalQuery);
 </center>
 
 
-<div class="wrapper center-block">
+<div class="wrapper center-block" style="margin-bottom: 2rem;">
   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
     <div class="panel panel-default">
       <div class="panel-heading active" role="tab" id="headingOne">
@@ -53,7 +53,7 @@ $gloablResult = $mysqli->query($globalQuery);
 </div>
 
 
-<div class="wrapper center-block">
+<div class="wrapper center-block" style="margin-bottom: 2rem;">
   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
     <div class="panel panel-default">
       <div class="panel-heading active" role="tab" id="headingOne">
@@ -83,7 +83,7 @@ $gloablResult = $mysqli->query($globalQuery);
 
 
 
-<div class="wrapper center-block">
+<div class="wrapper center-block" style="margin-bottom: 2rem;">
   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
     <div class="panel panel-default">
       <div class="panel-heading active" role="tab" id="headingTwo">
@@ -114,7 +114,7 @@ $gloablResult = $mysqli->query($globalQuery);
 
 
 
-<div class="wrapper center-block">
+<div class="wrapper center-block" style="margin-bottom: 2rem;">
   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
     <div class="panel panel-default">
       <div class="panel-heading active" role="tab" id="headingThree">
@@ -144,7 +144,7 @@ $gloablResult = $mysqli->query($globalQuery);
 
 
 
-<div class="wrapper center-block">
+<div class="wrapper center-block" style="margin-bottom: 2rem;">
   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
     <div class="panel panel-default">
       <div class="panel-heading active" role="tab" id="headingFour">
