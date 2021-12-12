@@ -107,8 +107,8 @@ $product = $products->fetch_row();
 </head>
 
 <body>
-    <!--header section start -->
-    <!-- <div class="header_section">
+    <!-- header section start -->
+    <div class="header_section">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3">
@@ -122,19 +122,20 @@ $product = $products->fetch_row();
                             <li><a href="./price.php">SERVICES</a></li>
                             <li><a href="./gym.php">NEWS</a></li>
                             <li><a href="./contact.php">CONTACT</a></li>
-                            <!-- <li><a href="#"><img src="images/search-icon.png"></a></li> -->
-    <!-- <div id="myNav" class="overlay">
+                            <li> <a class="back" href='https://rs1215.me/MarketPlace/home.php'>Go back to marketplace</a></li>
+                            <li><a href="#"><img src="images/search-icon.png"></a></li> -->
+                            <div id="myNav" class="overlay">
                                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                                 <div class="overlay-content">
                                     <a href="./index.php">HOME</a>
-                                    <a href="./about.php">ABOUT</a> -->
-    <!-- <a href="price.html">PRICE</a>
-                  <a href="gym.html">GYM</a>
-                  <a href="class.html">CLASS</a> -->
-    <!-- <a href="./contact.php">CONTACT</a> -->
-    <!-- <a href="#">LOGIN</a>
-                  <a href="#">REGISTER</a> -->
-    <!-- </div>
+                                    <a href="./about.php">ABOUT</a>
+                                    <a href="price.html">PRICE</a>
+                                    <a href="gym.html">GYM</a>
+                                    <a href="class.html">CLASS</a>
+                                    <a href="./contact.php">CONTACT</a>
+                                    <a href="#">LOGIN</a>
+                                    <a href="#">REGISTER</a>
+                                </div>
                             </div>
                             <span style="font-size:33px;cursor:pointer; color: #ffffff;" onclick="openNav()"><img src="images/toggle.png" class="toggle_menu"></span>
                     </div>
@@ -143,7 +144,7 @@ $product = $products->fetch_row();
                 </div>
             </div>
         </div>
-    </div> --> -->
+    </div>
     <!-- header section end -->
 
 
