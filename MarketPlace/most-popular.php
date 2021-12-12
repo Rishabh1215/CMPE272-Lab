@@ -37,8 +37,8 @@ $gloablResult = $mysqli->query($globalQuery);
       <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
         <div class="panel-body d-sm-flex">
           <?php while ($row = $gloablResult->fetch_row()) { ?>
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="<?php echo $row[4] ?>" alt="Card image cap">
+            <div class="card" style="width: 18rem; margin:1rem;">
+              <img class="card-img-top"  style="width: 240px; height: 160px;" src="<?php echo $row[4] ?>" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title"></h5>
                 <p class="card-text"><?php echo $row[3] ?></p>
@@ -66,8 +66,8 @@ $gloablResult = $mysqli->query($globalQuery);
       <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
         <div class="panel-body d-sm-flex">
           <?php while ($row = $result1->fetch_row()) { ?>
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="<?php echo $row[4] ?>" alt="Card image cap">
+            <div class="card" style="width: 18rem; margin:1rem;">
+              <img class="card-img-top" style="width: 240px; height: 160px;"  src="<?php echo $row[4] ?>" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title"></h5>
                 <p class="card-text"><?php echo $row[3] ?></p>
@@ -127,8 +127,8 @@ $gloablResult = $mysqli->query($globalQuery);
       <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
         <div class="panel-body d-sm-flex">
           <?php while ($row = $result3->fetch_row()) { ?>
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="<?php echo $row[4] ?>" alt="Card image cap">
+            <div class="card" style="width: 18rem; margin:1rem;">
+              <img class="card-img-top" style="width: 240px; height: 160px;" src="<?php echo $row[4] ?>" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title"></h5>
                 <p class="card-text"><?php echo $row[3] ?></p>
@@ -157,8 +157,8 @@ $gloablResult = $mysqli->query($globalQuery);
       <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
         <div class="panel-body d-sm-flex">
           <?php while ($row = $result4->fetch_row()) { ?>
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="<?php echo $row[4] ?>" alt="Card image cap">
+            <div class="card" style="width: 18rem; margin:1rem;">
+              <img class="card-img-top" style="width: 240px; height: 160px;" src="<?php echo $row[4] ?>" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title"></h5>
                 <p class="card-text"><?php echo $row[3] ?></p>
