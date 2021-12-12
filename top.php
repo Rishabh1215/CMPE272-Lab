@@ -2,8 +2,11 @@
 <html lang="en">
 <?php
 // $con = mysqli_connect('localhost', 'root', '');
-$con = mysqli_connect('localhost', 'pmauser', '#i0QHbk24Z');
-mysqli_select_db($con, 'fitness');
+$servername = "database-1.caorc3vfgkkg.us-east-2.rds.amazonaws.com";
+$username = "admin";
+$password = "Password123";
+$dbname = "shopping_marketplace";
+$con = new mysqli($servername, $username, $password, $dbname);
 ?>
 
 <head>
@@ -93,12 +96,12 @@ mysqli_select_db($con, 'fitness');
                             <th style="margin-left: 1rem;">Viewed</th>
                         </tr>
                         <?php
-                        $sql = "SELECT * FROM services ORDER BY hits DESC";
+                        $sql = "SELECT * FROM Products ORDER BY hits DESC";
                         $results = $con->query($sql);
                         for ($i = 0; $i < 5; $i++) {
                             $row = $results->fetch_assoc();
                             echo "<tr>";
-                            echo "<td><a href='./singleProduct.php?id=" . $row["id"] . "'>" . $row["title"] . "</a></td>";
+                            echo "<td><a href='./singleProduct.php?name=" . $row["company_name"] . "&product=" . $row["product_name"] . "'>" . $row["product_name"] . "</a></td>";
                             echo "<td>" . $row["hits"] . "</td>";
                             echo "</tr>";
                         }
@@ -106,6 +109,7 @@ mysqli_select_db($con, 'fitness');
                         ?>
                     </table>
                 </div>
+
                 <h2 style="display: flex; justify-content:center; align-items:center;margin-top:1rem;">
                     <b>Your 5 Most Visited Products</b>
                 </h2>
@@ -129,15 +133,19 @@ mysqli_select_db($con, 'fitness');
                             $max = 0;
                             $maxid = 0;
                             foreach ($heatmap as $key => $value) {
+                                // echo "key, value";
+                                // echo $key;
                                 if ($value > $max) {
                                     $max = $value;
                                     $maxid = $key;
                                 }
                             }
-                            $result = $con->query("SELECT * FROM services where id = " . $maxid . ";");
+                            $result = $con->query("SELECT * FROM Products where product_name ='{$maxid}'");
                             $row = $result->fetch_assoc();
                             echo "<tr>";
-                            echo "<td><a href='./singleProduct.php?id=" . $row["id"] . "'>" . $row["title"] . "</a></td>";
+                            echo "<td><a href='./singleProduct.php?name=" . $row["company_name"] . "&product=" . $row["product_name"] . "'>" . $row["product_name"] . "</a></td>";
+
+                            // echo "<td><a href='./singleProduct.php?id=" . $row["id"] . "'>" . $row["title"] . "</a></td>";
                             echo "<td>" . $max . "</td>";
                             echo "</tr>";
                             unset($heatmap[$maxid]);
@@ -148,6 +156,7 @@ mysqli_select_db($con, 'fitness');
                     echo "</table>";
                     ?>
                 </div>
+
 
                 <h2 style="display: flex; justify-content:center; align-items:center; margin-top:1rem;"><b>Your 5 Last Viewed Products</b></h2>
                 <div class="row" style="display: flex; justify-content:center; align-items:center;">
@@ -161,10 +170,10 @@ mysqli_select_db($con, 'fitness');
                         $viewed = array();
 
                         for ($i = 0; $i < 5 and $i < sizeof($hits); $i++) {
-                            $result = $con->query("SELECT * FROM services where id = " . $hits[$i] . ";");
+                            $result = $con->query("SELECT * FROM Products where product_name = '{$hits[$i]}'");
                             $row = $result->fetch_assoc();
                             echo "<tr>";
-                            echo "<td><a href='./singleProduct.php?id=" . $row["id"] . "'>" . $row["title"] . "</a></td>";
+                            echo "<td><a href='./singleProduct.php?name=" . $row["company_name"] . "&product=" . $row["product_name"] . "'>" . $row["product_name"] . "</a></td>";
                             echo "</tr>";
                             array_push($viewed, $hits[$i]);
                         }
