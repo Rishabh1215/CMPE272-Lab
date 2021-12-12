@@ -3,7 +3,7 @@
 # redirect to other page
 header("Location: https://rs1215.me/MarketPlace/login.php");
 ?>
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
    <head>
       <title>HTML Meta Tag</title>
@@ -12,4 +12,4 @@ header("Location: https://rs1215.me/MarketPlace/login.php");
    <body>
       <p>Common MarketPlace!</p>
    </body>
-</html> -->
+</html>
