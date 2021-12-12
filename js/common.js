@@ -107,7 +107,7 @@ function httpPost(action, payload) {
       return res;
     },
     error: function () {
-      alert("Somthing wents wrong, Please try again later!");
+      // alert("Somthing wents wrong, Please try again later!");
     },
   });
 }
