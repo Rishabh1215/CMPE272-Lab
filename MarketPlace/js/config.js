@@ -4,7 +4,7 @@ function getConfig() {
     webApps: [
       {
         name: "Pullo",
-        url: "http://cmpe272.me/pullo",
+        url: "http://cmpe272.me:443/pullo/",
         thumbnail: `images/shoes1.jpg`,
       },
       {
